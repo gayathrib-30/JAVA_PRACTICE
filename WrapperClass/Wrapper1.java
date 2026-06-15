@@ -1,0 +1,28 @@
+class Wrapper1 
+{
+	public static void main(String[] args) 
+	{
+		int a=20;
+		System.out.println("a is :"+a);
+		//BOXING FOR INT-->Converting primitive datatype into non primitive datatype
+		Integer ob1=Integer.valueOf(a);
+		System.out.println(ob1);
+		System.out.println(ob1.toString());//-->we can use toString() method also to print because it is an object
+		//BOXING FOR BYTE
+		byte b=10;
+		System.out.println(b);
+		Byte ob2=Byte.valueOf(b);
+		System.out.println(ob2.toString());
+		//BOXING FOR SHORT
+		short c=30;
+		System.out.println(c);
+		Short ob3=Short.valueOf(c);
+		System.out.println(ob3.toString());
+		
+		//UNBOXING FOR INT
+		int x=100;
+		Integer ob4=Integer.valueOf(x);//--boxing
+		int x2=ob4.intValue();//--unboxing
+		System.out.println("x2 is :"+x2);//--here to print we cannot able to toString() method
+	}
+}
